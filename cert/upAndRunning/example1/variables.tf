@@ -46,5 +46,6 @@ variable "object_example" {
 
 variable "server_port" {
   description = "port to get all  http request"
-  type = number
+  type        = number
+  default     = 99
 }
