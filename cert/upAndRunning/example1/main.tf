@@ -178,3 +178,8 @@ resource "aws_alb_listener_rule" "lb_listener_rule" {
   }
 
 }
+
+output "alb_dns_name" {
+  value       = aws_lb.alb_example.dns_name
+  description = "domain of the load balancer"
+}
